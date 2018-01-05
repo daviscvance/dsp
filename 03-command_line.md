@@ -70,7 +70,7 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 What does `xargs` do? Give an example of how to use it.
 
-> > `xargs` allows user to run a command on all items in a list. For example, if we want to rename file extensions ending in a certain format we can pass a list into the `xarg` command and it will perform that command on the listings.
+> > `xargs` allows user to run a command on all items in a list. For example, if we want to rename file extensions ending in a certain format (.JPG) we can pass a list into the `xargs` command and it will perform that command on the listings (rename to .jpg).
 ```console
 basename -s .JPG -a *.JPG | xargs -n1 -i mv {}.JPG {}.jpg
 ```
